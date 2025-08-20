@@ -1,12 +1,102 @@
-# React + Vite
+# GreenLedger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimal seed tracking dApp built with **React** and **Vite**, leveraging **Blockchain** technology for enhanced transparency and traceability. This project was forked from [Seed-Tracking-Dapp---using-Blockchain](https://github.com/Shrikant1a/Seed-Tracking-Dapp---using-Blockchain).
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Fast React Development:** Bootstrapped with Vite for blazing-fast HMR and optimized performance.
+- **Blockchain Integration:** Smart contract logic using Solidity to ensure secure, immutable records.
+- **Minimal Boilerplate:** Clean, beginner-friendly starter structure.
+- **ESLint Preconfigured:** Ship production-grade code with built-in linting rules.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** (version 16+ recommended)
+- **npm** or **yarn**
+- [MetaMask](https://metamask.io/) (for blockchain features)
+- [Hardhat](https://hardhat.org/) or your chosen Ethereum development environment
+
+
+### Installation
+
+Clone this repository:
+
+```bash
+git clone https://github.com/Satya-Sherkar/GreenLedger.git
+cd GreenLedger
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The app should now be running at [http://localhost:5173](http://localhost:5173).
+
+### Smart Contract Setup
+
+1. Navigate to the Solidity folder.
+2. Compile and deploy your smart contracts with your chosen tool (e.g., Hardhat).
+3. Copy deployed contract addresses and ABIs into the frontend as needed.
+
+***
+
+## 🏗️ Project Structure
+
+- `src/` — Main React/Vite codebase
+- `contracts/` or equivalent — Solidity smart contracts
+- `public/` — Static assets
+- `.eslintrc` — ESLint configuration for code quality
+
+***
+
+## 🛠️ Technologies Used
+
+| Language/Tech | Percentage |
+| :------------ | :--------- |
+| JavaScript    | 50.3%      |
+| CSS           | 45.0%      |
+| Solidity      | 4.2%       |
+| HTML          | 0.5%       |
+
+
+***
+
+## 📄 License
+
+MIT
+
+***
+
+## 🙌 Acknowledgments
+
+- Forked from [Shrikant1a/Seed-Tracking-Dapp---using-Blockchain](https://github.com/Shrikant1a/Seed-Tracking-Dapp---using-Blockchain)
+
+***
+
+## 📬 Contributions
+
+Pull requests welcome! For significant changes, open an issue first to discuss what you'd like to change.
+
+
+***
+
+*Created with ❤️ and Vite.*
+
+***
+
+

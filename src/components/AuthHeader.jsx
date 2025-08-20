@@ -8,7 +8,7 @@ function AuthHeader({ onShowLogin, onShowRegister, activeForm, onWalletConnected
   return (
     <header className="auth-header">
       <div className="header-left">
-        <h2 className="site-title">🌱Seed Tracker Using Blockchain🌱</h2>
+        <h2 className="site-title">🌱GreenLedger🌱</h2>
           
       </div>
 

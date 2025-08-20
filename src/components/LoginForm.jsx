@@ -1,12 +1,9 @@
-
-
-// src/components/LoginForm.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const LoginForm = ({ onLoginSuccess, showMessageBox }) => {
-  const [role, setRole] = useState('');
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [role, setRole] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,9 +12,9 @@ const LoginForm = ({ onLoginSuccess, showMessageBox }) => {
       showMessageBox("Login successful! Redirecting to Home Page.");
       onLoginSuccess();
       // Reset form
-      setRole('');
-      setUsername('');
-      setPassword('');
+      setRole("");
+      setUsername("");
+      setPassword("");
     } else {
       showMessageBox("Please enter your role, username, and password.");
     }
@@ -28,7 +25,9 @@ const LoginForm = ({ onLoginSuccess, showMessageBox }) => {
       <h2 className="section-title">LOGIN US</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-field-row">
-          <label htmlFor="loginRole" className="form-label">Select Role:</label>
+          <label htmlFor="loginRole" className="form-label">
+            Select Role:
+          </label>
           <div className="form-input-wrapper">
             <select
               id="loginRole"
@@ -46,7 +45,9 @@ const LoginForm = ({ onLoginSuccess, showMessageBox }) => {
           </div>
         </div>
         <div className="form-field-row">
-          <label htmlFor="loginUsername" className="form-label">User Name:</label>
+          <label htmlFor="loginUsername" className="form-label">
+            User Name:
+          </label>
           <div className="form-input-wrapper">
             <input
               type="text"
@@ -60,7 +61,9 @@ const LoginForm = ({ onLoginSuccess, showMessageBox }) => {
           </div>
         </div>
         <div className="form-field-row">
-          <label htmlFor="loginPassword" className="form-label">Password:</label>
+          <label htmlFor="loginPassword" className="form-label">
+            Password:
+          </label>
           <div className="form-input-wrapper">
             <input
               type="password"
@@ -74,7 +77,9 @@ const LoginForm = ({ onLoginSuccess, showMessageBox }) => {
           </div>
         </div>
         <div className="text-center-wrapper">
-          <button type="submit" className="btn-primary">Login</button>
+          <button type="submit" className="btn-primary">
+            Login
+          </button>
         </div>
       </form>
     </div>

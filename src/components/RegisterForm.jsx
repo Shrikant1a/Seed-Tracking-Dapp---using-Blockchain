@@ -1,20 +1,17 @@
-
-
-
 // src/components/RegisterForm.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // If using Firebase, uncomment and import db
 // import { collection, addDoc } from 'firebase/firestore';
 // import { db } from '../firebaseConfig'; // Import db from your config
 
 const RegisterForm = ({ userId, showMessageBox }) => {
-  const [role, setRole] = useState('');
-  const [username, setUsername] = useState('');
-  const [address, setAddress] = useState('');
-  const [gender, setGender] = useState('');
-  const [email, setEmail] = useState('');
-  const [contactNo, setContactNo] = useState('');
-  const [password, setPassword] = useState('');
+  const [role, setRole] = useState("");
+  const [username, setUsername] = useState("");
+  const [address, setAddress] = useState("");
+  const [gender, setGender] = useState("");
+  const [email, setEmail] = useState("");
+  const [contactNo, setContactNo] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -23,7 +20,15 @@ const RegisterForm = ({ userId, showMessageBox }) => {
     // In a real Firebase app, you'd have:
     // if (!db || !userId) { showMessageBox("App not ready."); return; }
 
-    if (!role || !username || !address || !gender || !email || !contactNo || !password) {
+    if (
+      !role ||
+      !username ||
+      !address ||
+      !gender ||
+      !email ||
+      !contactNo ||
+      !password
+    ) {
       showMessageBox("Please fill in all required fields.");
       return;
     }
@@ -45,21 +50,26 @@ const RegisterForm = ({ userId, showMessageBox }) => {
         timestamp: new Date()
       });
       */
-      console.log('Mock Registration Data:', {
-        userId, role, username, address, gender, email, contactNo, password
+      console.log("Mock Registration Data:", {
+        userId,
+        role,
+        username,
+        address,
+        gender,
+        email,
+        contactNo,
+        password,
       });
-
 
       showMessageBox("Registration successful!");
       // Clear the form after successful registration
-      setRole('');
-      setUsername('');
-      setAddress('');
-      setGender('');
-      setEmail('');
-      setContactNo('');
-      setPassword('');
-
+      setRole("");
+      setUsername("");
+      setAddress("");
+      setGender("");
+      setEmail("");
+      setContactNo("");
+      setPassword("");
     } catch (e) {
       console.error("Error during mock registration: ", e);
       showMessageBox("Error during registration. Please try again.");
@@ -71,7 +81,9 @@ const RegisterForm = ({ userId, showMessageBox }) => {
       <h2 className="section-title">REGISTER INFO</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-field-row">
-          <label htmlFor="registerRole" className="form-label">Select Role:</label>
+          <label htmlFor="registerRole" className="form-label">
+            Select Role:
+          </label>
           <div className="form-input-wrapper">
             <select
               id="registerRole"
@@ -88,7 +100,9 @@ const RegisterForm = ({ userId, showMessageBox }) => {
           </div>
         </div>
         <div className="form-field-row">
-          <label htmlFor="registerUsername" className="form-label">User Name:</label>
+          <label htmlFor="registerUsername" className="form-label">
+            User Name:
+          </label>
           <div className="form-input-wrapper">
             <input
               type="text"
@@ -102,7 +116,9 @@ const RegisterForm = ({ userId, showMessageBox }) => {
           </div>
         </div>
         <div className="form-field-row">
-          <label htmlFor="registerAddress" className="form-label">Address:</label>
+          <label htmlFor="registerAddress" className="form-label">
+            Address:
+          </label>
           <div className="form-input-wrapper">
             <input
               type="text"
@@ -124,7 +140,7 @@ const RegisterForm = ({ userId, showMessageBox }) => {
                 name="gender"
                 value="male"
                 className="form-radio"
-                checked={gender === 'male'}
+                checked={gender === "male"}
                 onChange={(e) => setGender(e.target.value)}
                 required
               />
@@ -136,7 +152,7 @@ const RegisterForm = ({ userId, showMessageBox }) => {
                 name="gender"
                 value="female"
                 className="form-radio"
-                checked={gender === 'female'}
+                checked={gender === "female"}
                 onChange={(e) => setGender(e.target.value)}
               />
               <span className="form-radio-label">Female</span>
@@ -144,7 +160,9 @@ const RegisterForm = ({ userId, showMessageBox }) => {
           </div>
         </div>
         <div className="form-field-row">
-          <label htmlFor="registerEmail" className="form-label">Email:</label>
+          <label htmlFor="registerEmail" className="form-label">
+            Email:
+          </label>
           <div className="form-input-wrapper">
             <input
               type="email"
@@ -158,7 +176,9 @@ const RegisterForm = ({ userId, showMessageBox }) => {
           </div>
         </div>
         <div className="form-field-row">
-          <label htmlFor="registerContact" className="form-label">Contact No:</label>
+          <label htmlFor="registerContact" className="form-label">
+            Contact No:
+          </label>
           <div className="form-input-wrapper">
             <input
               type="text"
@@ -172,7 +192,9 @@ const RegisterForm = ({ userId, showMessageBox }) => {
           </div>
         </div>
         <div className="form-field-row">
-          <label htmlFor="registerPassword" className="form-label">Password:</label>
+          <label htmlFor="registerPassword" className="form-label">
+            Password:
+          </label>
           <div className="form-input-wrapper">
             <input
               type="password"
@@ -186,7 +208,9 @@ const RegisterForm = ({ userId, showMessageBox }) => {
           </div>
         </div>
         <div className="text-center-wrapper">
-          <button type="submit" className="btn-primary">Register</button>
+          <button type="submit" className="btn-primary">
+            Register
+          </button>
         </div>
       </form>
     </div>

@@ -25,7 +25,7 @@ A modern, minimal seed tracking dApp built with **React** and **Vite**, leveragi
 Clone this repository:
 
 ```bash
-git clone https://github.com/Satya-Sherkar/GreenLedger.git
+git clone https://github.com/Shrikant1a/Seed-Tracking-Dapp---using-Blockchain.git
 cd GreenLedger
 ```
 

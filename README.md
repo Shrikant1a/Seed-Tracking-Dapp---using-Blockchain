@@ -99,9 +99,4 @@ Pull requests welcome! For significant changes, open an issue first to discuss w
 
 ***
 
-<span style="display:none">[^1]</span>
-
-<div style="text-align: center">⁂</div>
-
-[^1]: https://github.com/Satya-Sherkar/GreenLedger
 
